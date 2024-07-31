@@ -1,0 +1,40 @@
+.card-container {
+  box-shadow: 2px 2px 5px #bab6b6;
+  width: fn.rem(350);
+  height: fn.rem(200);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #bab6b6;
+  background-color: rgba(212, 207, 207, 0.1);
+  &.dark-mode {
+    border: 1px solid gray;
+    background-color: #1f1f1f;
+    box-shadow: unset;
+    h3,
+    p {
+      color: #fff;
+    }
+    .links {
+      .button {
+        color: #fcd37a;
+        background-color: #252525;
+        border: 1px solid #bab6b6;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    gap: fn.rem(8);
+    .button {
+      display: flex;
+      align-items: center;
+      gap: fn.rem(4);
+      text-decoration: none;
+      padding: 5px 10px;
+      border: none;
+      background-color: #5b8ee2;
+      color: #fff;
+      border-radius: 8px;
+    }
+  }
+}

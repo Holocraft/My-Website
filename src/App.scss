@@ -1,0 +1,69 @@
+@use "functions" as fn;
+@use "variables" as *;
+@import "../src/components/NavBar/nav-bar";
+@import "../src/components/ProjectCard/project-card";
+@import "../src/components/Projects/projects";
+@import "../src/components/Thoughts/thoughts";
+@import "../src/components/ThemeToggle/theme-toggle";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #3f3844;
+}
+
+p {
+  font-weight: 500;
+}
+
+a {
+  color: #3965d4;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  &.dark-mode {
+    background-color: $body-color;
+    h1,
+    h2,
+    h3,
+    p {
+      color: #fff;
+    }
+    a {
+      color: #fcd37a;
+    }
+  }
+}
+
+#root {
+  display: grid;
+  grid-template-columns: fn.rem(65) 1fr;
+  gap: 32px;
+  height: 100vh;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  .layout {
+    width: fn.rem(800);
+    margin-top: 65px;
+  }
+}

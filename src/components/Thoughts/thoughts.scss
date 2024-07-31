@@ -1,0 +1,15 @@
+.line {
+  width: 100%;
+  height: fn.rem(1);
+  background-color: gray;
+}
+
+.thought-wrapper {
+  padding-bottom: fn.rem(50);
+}
+
+.date {
+  font-size: fn.rem(13);
+  font-weight: 400;
+  font-style: italic;
+}

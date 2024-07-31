@@ -1,0 +1,125 @@
+nav {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100svh;
+  background-color: #fff;
+  padding: 10px 0 0 10px;
+  border-right: 1px solid #36454f;
+  &.dark-mode {
+    background-color: $body-color;
+    border-right: 1px solid #fff;
+    .nav-list {
+      a {
+        svg {
+          color: #fff;
+        }
+        color: #000;
+        &.active {
+          background-color: $body-color;
+          border-left: 1px solid #fff;
+          border-top: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          &::before,
+          &::after {
+            background-color: $body-color;
+            border-right: 1px solid #fff;
+          }
+          &::before {
+            box-shadow: 5px 5px 0 5px $body-color;
+            border-bottom: 1px solid #fff;
+          }
+          &::after {
+            bottom: calc($border-radius) * -1.07;
+            border-radius: 0 100vw 0 0;
+            box-shadow: 5px -5px 0 5px $body-color;
+            border-radius: 0 100vw 0 0;
+            box-shadow: 5px -5px 0 5px $body-color;
+            border-top: 1px solid #fff;
+          }
+        }
+      }
+    }
+  }
+  .nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: fn.rem(32);
+    padding-block: 6rem;
+
+    li {
+      width: fn.rem(55);
+      a {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 10;
+        padding: 10px 1px;
+        svg {
+          color: #5b8ee2;
+        }
+        &.active {
+          view-transition-name: activeTab;
+          border-radius: 100vw 0 0 100vw;
+          position: relative;
+          background-color: #fff;
+          border-left: 1px solid #000;
+          border-top: 1px solid #000;
+          border-bottom: 1px solid #000;
+          margin-left: -1px;
+          margin-top: -1px;
+          margin-bottom: -1px;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            width: $border-radius;
+            height: $border-radius;
+            right: 0;
+            background-color: #fff;
+            border-right: 1px solid #000;
+          }
+          &::before {
+            top: calc($border-radius) * -1.07;
+            border-radius: 0 0 100vw 0;
+            box-shadow: 5px 5px 0 5px #fff;
+            border-bottom: 1px solid #000;
+          }
+          &::after {
+            bottom: calc($border-radius) * -1.07;
+            border-radius: 0 100vw 0 0;
+            box-shadow: 5px -5px 0 5px #fff;
+            border-top: 1px solid #000;
+          }
+          &::view-transition-group(activeTab) {
+            animation-duration: 500ms;
+            animation-timing-function: ease-in-out;
+          }
+        }
+        svg {
+          margin-right: 12px;
+        }
+      }
+      &:nth-child(1) {
+        a {
+          view-transition-name: nav-link-1;
+        }
+      }
+      &:nth-child(2) {
+        a {
+          view-transition-name: nav-link-2;
+        }
+      }
+      &:nth-child(3) {
+        a {
+          view-transition-name: nav-link-3;
+        }
+      }
+    }
+  }
+}
