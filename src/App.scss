@@ -63,8 +63,15 @@ main {
   justify-content: center;
   overflow-y: auto;
   .layout {
+    display: flex;
+    flex-direction: column;
     width: fn.rem(800);
     margin-top: 65px;
+    img {
+      height: 200px;
+      border-radius: 100vw;
+      align-self: center;
+    }
   }
 }
 

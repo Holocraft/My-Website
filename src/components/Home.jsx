@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Michael from "../images/michael.jpg";
 
 export default function Home() {
   return (
     <div className='layout'>
+      <img src={Michael} alt='Michael' />
       <h1>Hi, I'm Michael</h1>
       <p>
         I'm a software engineer who loves creating and learning everything UI/UX
