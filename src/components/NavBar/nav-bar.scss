@@ -123,3 +123,41 @@ nav {
     }
   }
 }
+
+@media screen and (max-width: 850px) {
+  #root {
+    grid-template-rows: fn.rem(65) 1fr;
+    grid-template-columns: unset;
+    nav {
+      .nav-list {
+        display: flex;
+        justify-content: center;
+        padding-block: unset;
+        a {
+          &.active {
+            border-left: unset;
+            border-top: unset;
+            border-radius: unset;
+            margin-left: -1px;
+            margin-right: -1px;
+            margin-top: -1px;
+            margin-bottom: -1px;
+            &::before,
+            &::after {
+              display: none;
+            }
+          }
+          svg {
+            margin-right: unset;
+          }
+        }
+      }
+      .toggle-container {
+        bottom: unset;
+        left: unset;
+        top: fn.rem(-7);
+        right: 0;
+      }
+    }
+  }
+}

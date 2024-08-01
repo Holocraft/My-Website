@@ -67,3 +67,15 @@ main {
     margin-top: 65px;
   }
 }
+
+@media screen and (max-width: 850px) {
+  #root {
+    grid-template-rows: fn.rem(65) 1fr;
+    grid-template-columns: unset;
+    main {
+      .layout {
+        padding: 0 40px;
+      }
+    }
+  }
+}
