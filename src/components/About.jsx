@@ -5,7 +5,7 @@ export default function About() {
     <div className='layout'>
       <h1>About me</h1>
       <p>
-        I've been in the software industry professionaly since 2015 and a
+        I've been in the software industry professionally since 2015 and a
         website tinkerer since 1997. I made a bunch of geocities websites back
         in the day for gaming groups and have had an interest in how UI/UX
         affects our experience with the internet since then.
