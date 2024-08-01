@@ -22,6 +22,7 @@ export default function NavBar({ isDarkMode }) {
       <nav className={`${isDarkMode ? "dark-mode" : ""}`}>
         <ul className='nav-list'>
           <li
+            aria-label='home'
             className={`${activeTab === "home" ? "active" : ""}`}
             onClick={() => handleTabClick("home")}
           >
@@ -30,6 +31,7 @@ export default function NavBar({ isDarkMode }) {
             </NavLink>
           </li>
           <li
+            aria-label='about'
             className={`${activeTab === "about" ? "active" : ""}`}
             onClick={() => handleTabClick("about")}
           >
@@ -38,6 +40,7 @@ export default function NavBar({ isDarkMode }) {
             </NavLink>
           </li>
           <li
+            aria-label='projects'
             className={`${activeTab === "projects" ? "active" : ""}`}
             onClick={() => handleTabClick("projects")}
           >
@@ -46,6 +49,7 @@ export default function NavBar({ isDarkMode }) {
             </NavLink>
           </li>
           <li
+            aria-label='thoughts'
             className={`${activeTab === "blog" ? "active" : ""}`}
             onClick={() => handleTabClick("blog")}
           >

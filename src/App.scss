@@ -35,7 +35,7 @@ a {
 
 body {
   margin: 0;
-  background-color: #fff;
+  background-color: $background-color;
   &.dark-mode {
     background-color: $body-color;
     h1,

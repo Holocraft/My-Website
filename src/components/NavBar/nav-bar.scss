@@ -4,7 +4,7 @@ nav {
   bottom: 0;
   left: 0;
   max-height: 100svh;
-  background-color: #fff;
+  background-color: $background-color;
   padding: 10px 0 0 10px;
   border-right: 1px solid #36454f;
   &.dark-mode {
@@ -67,7 +67,7 @@ nav {
           view-transition-name: activeTab;
           border-radius: 100vw 0 0 100vw;
           position: relative;
-          background-color: #fff;
+          background-color: $background-color;
           border-left: 1px solid #000;
           border-top: 1px solid #000;
           border-bottom: 1px solid #000;
@@ -81,19 +81,19 @@ nav {
             width: $border-radius;
             height: $border-radius;
             right: 0;
-            background-color: #fff;
+            background-color: $background-color;
             border-right: 1px solid #000;
           }
           &::before {
             top: calc($border-radius) * -1.07;
             border-radius: 0 0 100vw 0;
-            box-shadow: 5px 5px 0 5px #fff;
+            box-shadow: 5px 5px 0 5px $background-color;
             border-bottom: 1px solid #000;
           }
           &::after {
             bottom: calc($border-radius) * -1.07;
             border-radius: 0 100vw 0 0;
-            box-shadow: 5px -5px 0 5px #fff;
+            box-shadow: 5px -5px 0 5px $background-color;
             border-top: 1px solid #000;
           }
           &::view-transition-group(activeTab) {

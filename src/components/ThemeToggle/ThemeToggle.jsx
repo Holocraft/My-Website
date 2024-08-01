@@ -5,7 +5,7 @@ export default function ThemeToggle() {
   const { isDarkMode, toggleTheme } = useTheme();
 
   return (
-    <div>
+    <div aria-label='theme-toggle'>
       <div className='toggle-container'>
         <input
           type='checkbox'
