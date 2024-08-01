@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 import ProjectCard from "../ProjectCard/ProjectCard";
+import { experience } from "./experience";
+import { useTheme } from "../../ThemeContext";
+import IconExternalLink from "../../assets/external-link-icon";
 
 export default function Projects() {
+  const { isDarkMode } = useTheme();
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
@@ -27,15 +29,42 @@ export default function Projects() {
 
   return (
     <div className='layout projects-page'>
-      <h1>Projects</h1>
-      <div className='cards-wrapper'>
-        {repos?.map((repo, index) => {
-          return (
-            <ProjectCard key={index} repo={repo} /> || (
-              <Skeleton count={3} width={350} />
-            )
-          );
-        })}
+      <div className='experience-wrapper'>
+        <h1>Experience</h1>
+        <div className='cards-wrapper'>
+          {experience.map((exp) => {
+            return (
+              <a href={exp.url} target='_blank'>
+                <div
+                  key={exp.id}
+                  className={`company-container ${
+                    isDarkMode ? "dark-mode" : ""
+                  }`}
+                >
+                  <div className='title-wrapper'>
+                    <h2>{exp.title}</h2>
+                    <IconExternalLink />
+                  </div>
+                  <p className='date'>{exp.date}</p>
+                  <p dangerouslySetInnerHTML={{ __html: exp.body }} />
+                  <div className='chip-wrapper'>
+                    {exp.chips?.map((chip) => {
+                      return <div className='chip'>{chip}</div>;
+                    })}
+                  </div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+      <div className='projects-wrapper'>
+        <h1>Projects</h1>
+        <div className='cards-wrapper'>
+          {repos?.map((repo, index) => {
+            return <ProjectCard key={index} repo={repo} />;
+          })}
+        </div>
       </div>
     </div>
   );

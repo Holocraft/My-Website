@@ -7,7 +7,7 @@ export default function Thoughts() {
       <h1>Thoughts</h1>
       {thoughts.map((thought) => {
         return (
-          <div className='thought-wrapper'>
+          <div key={thought.id} className='thought-wrapper'>
             <h2>{thought.title}</h2>
             <div className='line' />
             <p className='date'>{thought.date}</p>

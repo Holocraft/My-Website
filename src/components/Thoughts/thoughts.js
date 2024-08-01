@@ -16,7 +16,7 @@ export const thoughts = [
     `,
   },
   {
-    id: "1",
+    id: "2",
     title: "Six Months Into New Job",
     date: "8/5/21",
     body: `
@@ -34,7 +34,7 @@ export const thoughts = [
     `,
   },
   {
-    id: "1",
+    id: "3",
     title: "The State of Interviewing",
     date: "12/12/20",
     body: `
