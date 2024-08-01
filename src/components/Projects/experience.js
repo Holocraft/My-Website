@@ -51,4 +51,17 @@ export const experience = [
         `,
     chips: ["Javascript", "React", "Redux", "SASS", "jQuery"],
   },
+  {
+    id: "4",
+    url: "https://www.army.mil/",
+    title: "US Army - Automatic Test Systems Operator and Maintainer",
+    date: "February 2004 - February 2008",
+    body: `
+            <p>Tested and maintained avionics, missle systems, and other FLIR based systems. 
+            Deployed to Operation Iraqi Freedom (OIF). Lead squad during OIF to keep Kiowa Warrior 
+            and Blackhawk avionics repaired and maintained. Honorably discharged at rank E4. Received 
+            Iraq Campaign Medal and Army Good Conduct Medal.</p>
+        `,
+    chips: ["IFTE", "Avionics", "FLIR", "OIF"],
+  },
 ];
