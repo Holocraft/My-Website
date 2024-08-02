@@ -30,7 +30,7 @@ p {
 }
 
 a {
-  color: #3965d4;
+  color: $link;
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ body {
       color: #fff;
     }
     a {
-      color: #fcd37a;
+      color: $link-dark;
     }
   }
 }

@@ -1,6 +1,28 @@
 export const thoughts = [
   {
     id: "1",
+    title: "First Impressions with Next.js",
+    date: "11/1/22",
+    body: `
+    <p>It seems everyone is doing SSR (Server-side Rendering) these days so I figured I would give it a try. Next.js is a framework that incorporates
+    SSR into your project as well as many other features. Since it's a framework, it also has backend support built-in.
+    I have to say, after looking through the docs and trying it out, it's super fast and a joy to work with.
+    There's a lot of built-in functionality that comes with it to make the developer experience smooth and easy.</p>
+
+    <p>I especially like the new next/image component that takes care of a lot of extra work behind the scenes. It takes care of image layout shift
+    while loading a page so you don't have to hardcode a placeholder image size while the image loads. It also optimizes image files
+    to improve web vitals readings. The time to paint is significantly reduced so it makes the UX amazing.</p>
+
+    <p>The next/link component is also really nice. It makes route navigation a breeze. If you need to navigate to another page in your app,
+    just use <Link /> and point to a defined route. This is only meant for internal navigation, though.
+    If you want to navigate to an external site, you'll still have to use a plain old anchor tag.</p>
+
+    <p>There is a lot more to this great framework but I'll keep this short. Overall, I'm really impressed. I can't wait to see
+    what future features Vercel comes up with. Check it out at <span><a href="https://nextjs.org/" target="_blank">Next.js</a></span></p>
+    `,
+  },
+  {
+    id: "2",
     title: "Nostalgic Retro Gaming",
     date: "2/16/22",
     body: `
@@ -16,7 +38,7 @@ export const thoughts = [
     `,
   },
   {
-    id: "2",
+    id: "3",
     title: "Six Months Into New Job",
     date: "8/5/21",
     body: `
@@ -34,7 +56,7 @@ export const thoughts = [
     `,
   },
   {
-    id: "3",
+    id: "4",
     title: "The State of Interviewing",
     date: "12/12/20",
     body: `
