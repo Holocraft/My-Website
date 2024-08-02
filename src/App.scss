@@ -105,6 +105,9 @@ main {
     main {
       .layout {
         width: 23rem;
+        .icons {
+          display: none;
+        }
       }
     }
   }
