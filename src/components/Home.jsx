@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Michael from "../images/michael.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
@@ -17,6 +23,32 @@ export default function Home() {
         <Link to='thoughts'>thoughts</Link> on software, gaming, or anything
         else I'm interested in.
       </p>
+      <div className='icons'>
+        <a
+          href='https://github.com/Holocraft'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='github'
+        >
+          <FontAwesomeIcon icon={faGithub} size='2x' />
+        </a>
+        <a
+          href='https://www.linkedin.com/in/michaelrsmith10/'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='linkedin'
+        >
+          <FontAwesomeIcon icon={faLinkedin} size='2x' />
+        </a>
+        <a
+          href='https://www.instagram.com/mikiersmith/'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='instagram'
+        >
+          <FontAwesomeIcon icon={faInstagram} size='2x' />
+        </a>
+      </div>
     </div>
   );
 }

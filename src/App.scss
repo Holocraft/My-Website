@@ -73,6 +73,18 @@ main {
       border-radius: 100vw;
       align-self: center;
     }
+    .icons {
+      display: flex;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      a {
+        margin: 5px;
+        svg {
+          color: gray;
+        }
+      }
+    }
   }
 }
 
