@@ -38,6 +38,9 @@ nav {
             box-shadow: 5px -5px 0 5px $body-color;
             border-top: 1px solid #fff;
           }
+          svg {
+            color: $link-dark;
+          }
         }
       }
     }
@@ -99,6 +102,9 @@ nav {
           &::view-transition-group(activeTab) {
             animation-duration: 500ms;
             animation-timing-function: ease-in-out;
+          }
+          svg {
+            color: $link;
           }
         }
         svg {

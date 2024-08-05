@@ -53,7 +53,7 @@ export const experience = [
   },
   {
     id: "4",
-    url: "https://www.army.mil/",
+    url: "https://www.usarmedmilitaryforces.us/careers-and-jobs/career-match/mechanics-engineering/test-repair/94y-automatic-test-systems-operator.html",
     title: "US Army - Automatic Test Systems Operator and Maintainer",
     date: "February 2004 - February 2008",
     body: `

@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div className='layout'>
-      <h1>About me</h1>
+      <h1 className='main-title'>About me</h1>
       <p>
         I've been in the software industry professionally since 2015 and a
         website tinkerer since 1997. I made a bunch of geocities websites back

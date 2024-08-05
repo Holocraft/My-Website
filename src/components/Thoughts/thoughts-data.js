@@ -26,7 +26,7 @@ export const thoughts = [
     title: "Nostalgic Retro Gaming",
     date: "2/16/22",
     body: `
-    <p>I purchased a bundle in Steam for one of my favorite gaming franchises. Final Fantasy. It comes with FF I thru FF VI. I played some 
+    <p>I purchased a <a href="https://store.steampowered.com/bundle/21478/FINAL_FANTASY_IVI_Bundle/">bundle</a> in Steam for one of my favorite gaming franchises. Final Fantasy. It comes with FF I thru FF VI. I played some 
     of these games in my childhood and absolutely loved them.</p>
 
     <p>I played FF I when it came out on the NES in 1990 and was blown away at the game mechanics. I had never played a turn-based combat system

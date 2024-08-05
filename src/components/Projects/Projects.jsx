@@ -30,30 +30,28 @@ export default function Projects() {
   return (
     <div className='layout projects-page'>
       <div className='experience-wrapper'>
-        <h1>Experience</h1>
+        <h1 className='main-title'>Experience</h1>
         <div className='cards-wrapper'>
           {experience.map((exp) => {
             return (
-              <a href={exp.url} target='_blank'>
-                <div
-                  key={exp.id}
-                  className={`company-container ${
-                    isDarkMode ? "dark-mode" : ""
-                  }`}
-                >
-                  <div className='title-wrapper'>
+              <div
+                key={exp.id}
+                className={`company-container ${isDarkMode ? "dark-mode" : ""}`}
+              >
+                <div className='title-wrapper'>
+                  <a href={exp.url} target='_blank'>
                     <h2>{exp.title}</h2>
                     <IconExternalLink />
-                  </div>
-                  <p className='date'>{exp.date}</p>
-                  <p dangerouslySetInnerHTML={{ __html: exp.body }} />
-                  <div className='chip-wrapper'>
-                    {exp.chips?.map((chip) => {
-                      return <div className='chip'>{chip}</div>;
-                    })}
-                  </div>
+                  </a>
                 </div>
-              </a>
+                <p className='date'>{exp.date}</p>
+                <p dangerouslySetInnerHTML={{ __html: exp.body }} />
+                <div className='chip-wrapper'>
+                  {exp.chips?.map((chip) => {
+                    return <div className='chip'>{chip}</div>;
+                  })}
+                </div>
+              </div>
             );
           })}
         </div>
