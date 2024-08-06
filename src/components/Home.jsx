@@ -40,14 +40,6 @@ export default function Home() {
         >
           <FontAwesomeIcon icon={faLinkedin} size='2x' />
         </a>
-        <a
-          href='https://www.instagram.com/mikiersmith/'
-          rel='noopener noreferrer'
-          target='_blank'
-          className='instagram'
-        >
-          <FontAwesomeIcon icon={faInstagram} size='2x' />
-        </a>
       </div>
     </div>
   );
