@@ -92,7 +92,6 @@ main {
     }
   }
 }
-
 .button {
   display: flex;
   align-items: center;
@@ -103,6 +102,9 @@ main {
   background-color: #5b8ee2;
   color: #fff;
   border-radius: 8px;
+}
+.modal-link {
+  width: 100px;
 }
 
 @media screen and (max-width: 850px) {

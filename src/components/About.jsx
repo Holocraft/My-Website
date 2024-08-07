@@ -26,7 +26,7 @@ export default function About() {
       <p>
         I'm an avid gamer, including video games and table top games like D&D.
       </p>
-      <a href='#' onClick={toggleModal}>
+      <a href='#' className='modal-link' onClick={toggleModal}>
         Contact Me
       </a>
       {showModal && (
