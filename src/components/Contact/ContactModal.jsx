@@ -59,7 +59,7 @@ export default function ContactModal({ showModal, handleClose, toast }) {
           });
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.log("FAILED...", error);
         }
       );
   };
