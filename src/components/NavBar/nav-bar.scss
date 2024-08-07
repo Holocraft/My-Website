@@ -135,6 +135,7 @@ nav {
     grid-template-rows: fn.rem(65) 1fr;
     grid-template-columns: unset;
     nav {
+      border-right: unset;
       .nav-list {
         display: flex;
         justify-content: center;
