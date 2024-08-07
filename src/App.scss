@@ -4,6 +4,7 @@
 @import "../src/components/ProjectCard/project-card";
 @import "../src/components/Projects/projects";
 @import "../src/components/Thoughts/thoughts";
+@import "../src/components/Contact/contact-modal";
 @import "../src/components/ThemeToggle/theme-toggle";
 
 * {
@@ -90,6 +91,18 @@ main {
       }
     }
   }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: fn.rem(4);
+  text-decoration: none;
+  padding: 5px 10px;
+  border: none;
+  background-color: #5b8ee2;
+  color: #fff;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 850px) {

@@ -1,0 +1,74 @@
+.contact-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(63, 56, 68, 0.7);
+  .loading-spinner {
+    position: absolute;
+    z-index: 10;
+    width: 80px;
+    height: 80px;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #e6e6e6;
+    padding: 30px;
+    border-radius: fn.rem(8);
+    border: 1px solid #bab6b6;
+    width: fn.rem(600);
+    height: fit-content;
+    svg {
+      cursor: pointer;
+      height: 30px;
+      color: #6b676d;
+      position: absolute;
+      right: 30px;
+      top: 10px;
+    }
+    h2 {
+      color: #3f3844;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      label,
+      input,
+      textarea {
+        color: #3f3844;
+      }
+      input,
+      textarea {
+        background-color: #fff;
+        border: 1px solid #bab6b6;
+        border-radius: fn.rem(4);
+        margin: 10px 0;
+      }
+      input {
+        height: fn.rem(40);
+      }
+      textarea {
+        resize: none;
+      }
+      .button {
+        background-color: #5b8ee2;
+        color: #fff;
+      }
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #3f3844;
+        transition: background-color 5000s ease-in-out 0s;
+        box-shadow: inset 0 0 20px 20px #fff;
+      }
+    }
+  }
+}

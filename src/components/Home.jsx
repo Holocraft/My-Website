@@ -2,11 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Michael from "../images/michael.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
