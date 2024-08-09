@@ -1,6 +1,31 @@
 export const thoughts = [
   {
     id: "1",
+    title: "Old School Javascript",
+    date: "8/8/24",
+    body: `
+    <p>I remember when I first tried writing Javascript. It was the late 1990's and I was creating a geocities website for my gaming clan.
+    I learned how to write HTML from a tutorial on tucows.com and wanted to put more interactivity into the site. Javascript was at version
+    ES3 at the time. I had a little experience in C++ so learning Javascript was very different in that it wasn't compiled and was used as the
+    language of the web.
+    </p>
+
+    <p>Back then, you didn't have hundreds of libraries in the ecosystem. It was just Javascript and that's what we had to work with.
+    There were a lot of things that you had to think about for certain edge cases. I remember learning about the "defensive semicolon"
+    and how you should put that at the start of every JS file. The purpose was for when your JS gets minified and the previous file didn't
+    end with a semicolon, this would protect against errors. Especially if you used immediately-invoked function expressions, which would
+    act as if it was a continuation of the line in the previous file if not terminated properly with a semicolon.
+    There was so much that could go wrong in old school JS.
+    </p>
+
+    <p>I do miss those days, though. No extra libraries, no having to learn
+    new technologies every month, no need to worry about breaking changes in new versions of libraries when you update. Don't get me wrong,
+    todays Javascript is so much better with all of the new functionality and ease of use with npm packages. It's just nice to look
+    back sometimes and see how far it's come.</p>
+    `,
+  },
+  {
+    id: "2",
     title: "First Impressions with Next.js",
     date: "11/1/22",
     body: `
@@ -22,7 +47,7 @@ export const thoughts = [
     `,
   },
   {
-    id: "2",
+    id: "3",
     title: "Nostalgic Retro Gaming",
     date: "2/16/22",
     body: `
@@ -38,7 +63,7 @@ export const thoughts = [
     `,
   },
   {
-    id: "3",
+    id: "4",
     title: "Six Months Into New Job",
     date: "8/5/21",
     body: `
@@ -56,7 +81,7 @@ export const thoughts = [
     `,
   },
   {
-    id: "4",
+    id: "5",
     title: "The State of Interviewing",
     date: "12/12/20",
     body: `
