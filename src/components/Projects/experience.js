@@ -9,6 +9,7 @@ export const experience = [
             Checkout, My Business, Search, and Crate. 
             Created the front end for the search app from the ground up, collaborating with
             designers and back end engineers from start to prod.</p>
+            <p><strong><em>Note: As of 8/15/24, Inxeption has shut down and the site is no longer available.</em></strong></p>
         `,
     chips: [
       "Typescript",
